@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding = "utf-8" standalone = "no"?> 
+<!DOCTYPE Conversation SYSTEM "Conversation.dtd">
+<Conversation SessionID="00000001" ResultCode="+000000000"
+	ApplicationID="ISSUER">
+	<Message RequestNumber="0001" MessageID="GR045003" LUWInd="0">
+		<RepeatGroup RepeatGroupID="0001">
+			<GroupItem>
+				<Entity EntityName="GeDmStatementSummary">
+					<Field FieldName="accountId" FieldValue="001A03F70055CB7A"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="lastUpdateNo" FieldValue="0"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="statementDate" FieldValue="2015-08-10"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="periodStartDate" FieldValue="2014-08-11"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="periodEndDate" FieldValue="2015-08-10"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="statementNo" FieldValue="5"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="currencyCode" FieldValue="156"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="automaticStatusMessageId" FieldValue="    "
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="creditLimitIncreaseMessageId" FieldValue="    "
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="delinquencyMessageId" FieldValue="    "
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="firstUsageMessageId" FieldValue="    "
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="manualStatusMessageId" FieldValue="    "
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="overlimitMessageId" FieldValue="    "
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="statementMessage1Id" FieldValue="SM12"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="statementMessage2Id" FieldValue="SM02"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+					<Field FieldName="statementMessage3Id" FieldValue="SM16"
+						FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
+					</Field>
+				</Entity>
+				<RepeatGroup RepeatGroupID="0001">
+				</RepeatGroup>
+				<RepeatGroup RepeatGroupID="0002">
+				</RepeatGroup>
+				<RepeatGroup RepeatGroupID="0003">
+				</RepeatGroup>
+			</GroupItem>
+		</RepeatGroup>
+	</Message>
+</Conversation>
