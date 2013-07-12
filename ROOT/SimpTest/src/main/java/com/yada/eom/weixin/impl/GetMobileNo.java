@@ -8,12 +8,12 @@ import com.yada.eom.order.ReceXmlField;
 import com.yada.eom.weixin.IGetMobileNo;
 
 
-public class GetMobileNoImpl implements IGetMobileNo {
+public class GetMobileNo implements IGetMobileNo {
 
 	private String sessionId;
 	private IEomHandle cq016080;
 
-	public GetMobileNoImpl(String sessionId, IEomHandle cq016080) {
+	public GetMobileNo(String sessionId, IEomHandle cq016080) {
 		this.sessionId = sessionId;
 		this.cq016080 = cq016080;
 	}

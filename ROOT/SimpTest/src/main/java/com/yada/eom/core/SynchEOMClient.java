@@ -14,7 +14,13 @@ public class SynchEOMClient {
 	private final SynchClientAdapter clientAdapter;
 
 	public SynchEOMClient() {
-		String caIniPath = SynchEOMClient.class.getClassLoader().getResource("").toString();
+		this(null);
+	}
+
+	public SynchEOMClient(String caIniPath) {
+		if (caIniPath == null || caIniPath.trim().isEmpty()) {
+			caIniPath = SynchEOMClient.class.getClassLoader().getResource("").toString();
+		}
 		URI uri = null;
 		try {
 			uri = new URI(caIniPath);

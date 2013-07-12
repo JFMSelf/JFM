@@ -10,12 +10,12 @@ import com.yada.eom.order.impl.CQ045005_GR045003;
 import com.yada.eom.weixin.IGetBillingSummary;
 import com.yada.eom.weixin.model.BillingSummary;
 
-public class GetBillingSummaryImpl implements IGetBillingSummary {
+public class GetBillingSummary implements IGetBillingSummary {
 	private String sessionId;
 
 	private IEomHandle cq045005;
 
-	public GetBillingSummaryImpl(String sessionId, IEomHandle cq045005) {
+	public GetBillingSummary(String sessionId, IEomHandle cq045005) {
 		this.sessionId = sessionId;
 		this.cq045005 = cq045005;
 	}
@@ -32,7 +32,7 @@ public class GetBillingSummaryImpl implements IGetBillingSummary {
 	public static void main(String[] args) {
 		SynchEOMClient eomClient = new SynchEOMClient();
 		CQ045005_GR045003 a = new CQ045005_GR045003(eomClient);
-		GetBillingSummaryImpl temp = new GetBillingSummaryImpl("1", a);
+		GetBillingSummary temp = new GetBillingSummary("1", a);
 		temp.get("001A03F70055CB7A");
 	}
 }

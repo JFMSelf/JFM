@@ -8,12 +8,12 @@ import com.yada.eom.order.IEomHandle;
 import com.yada.eom.weixin.IGetAccountMainKey;
 import com.yada.eom.weixin.model.Accuont;
 
-public class GetAccountMainKeyImpl implements IGetAccountMainKey {
+public class GetAccountMainKey implements IGetAccountMainKey {
 
 	private IEomHandle cq008134;
 	private String sessionId;
 
-	public GetAccountMainKeyImpl(String sessionId, IEomHandle cq008134) {
+	public GetAccountMainKey(String sessionId, IEomHandle cq008134) {
 		this.sessionId = sessionId;
 		this.cq008134 = cq008134;
 	}
