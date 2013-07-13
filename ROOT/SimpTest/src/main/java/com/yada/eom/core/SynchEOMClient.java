@@ -30,7 +30,7 @@ public class SynchEOMClient {
 		clientAdapter = new SynchClientAdapter(uri.getPath());
 	}
 
-	public String send(String sendXmlMsg) throws RuntimeException {
+	public String send(String sendXmlMsg) throws Exception {
 		String eomDoConversation = null;
 		try {
 			eomDoConversation = clientAdapter.eomDoConversation(sendXmlMsg);
@@ -42,7 +42,8 @@ public class SynchEOMClient {
 			StringBuilder mess = new StringBuilder();
 			mess.append("EOM交互失败: 发送数据[").append(sendXmlMsg).append("收到数据[");
 			mess.append(eomDoConversation).append("]");
-			throw new RuntimeException(mess.toString(), e);
+			logger.error(mess.toString(), e);
+			throw new Exception(mess.toString(), e);
 		}
 	}
 }

@@ -20,9 +20,15 @@ public class GetMobileNo implements IGetMobileNo {
 
 	@Override
 	public String get(String accNo) {
-		Document receDoc = cq016080.handle(sessionId, accNo);
-		Element eMessage = receDoc.getRootElement().getChildren(ReceXmlField.Message).get(0);
-		return eMessage.getChildren(ReceXmlField.Entity).get(1).getChild(ReceXmlField.Field)
-				.getAttribute(ReceXmlField.FieldValue).getValue();
+		try {
+			Document receDoc = cq016080.handle(sessionId, accNo);
+			Element eMessage = receDoc.getRootElement().getChildren(ReceXmlField.Message).get(0);
+			return eMessage.getChildren(ReceXmlField.Entity).get(1).getChild(ReceXmlField.Field)
+					.getAttribute(ReceXmlField.FieldValue).getValue();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
 	}
 }

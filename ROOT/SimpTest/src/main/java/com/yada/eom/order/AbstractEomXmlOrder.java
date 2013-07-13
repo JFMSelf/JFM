@@ -47,7 +47,11 @@ public abstract class AbstractEomXmlOrder implements IEomHandle{
 		for (int x = 0; x < contents.length; x++) {
 			sendXmlMsg.append(contents[x]);
 			if (x < parametersLen) {
-				sendXmlMsg.append(parameters[x]);
+				String temp = parameters[x];
+				if(temp == null){
+					temp = "";
+				}
+				sendXmlMsg.append(temp);
 			}
 		}
 		return sendXmlMsg.toString();
@@ -69,7 +73,7 @@ public abstract class AbstractEomXmlOrder implements IEomHandle{
 	}
 	
 	@Override
-	public Document handle(String... parameters) {
+	public Document handle(String... parameters) throws Exception {
 		String send = this.packSendXmlMsg(parameters);
 		String rece = this.eomClient.send(send);
 		return this.unpackReceXmlMsg(rece);

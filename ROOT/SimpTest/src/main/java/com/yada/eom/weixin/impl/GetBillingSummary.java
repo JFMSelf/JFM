@@ -23,8 +23,13 @@ public class GetBillingSummary implements IGetBillingSummary {
 	@Override
 	public List<BillingSummary> get(String accountId) {
 		
-		Document receDoc = cq045005.handle(sessionId, accountId);
-		// TODO 读取receDoc转成对象
+		try {
+			Document receDoc = cq045005.handle(sessionId, accountId);
+			// TODO 读取receDoc转成对象
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		return null;
 	}

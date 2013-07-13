@@ -10,6 +10,6 @@ public interface IEomHandle {
 	 *            参数数量需要大于1，第一个参数必须是sessionId；
 	 * @return JDOM2对象
 	 */
-	public Document handle(String... parameters);
+	public Document handle(String... parameters) throws Exception;
 
 }

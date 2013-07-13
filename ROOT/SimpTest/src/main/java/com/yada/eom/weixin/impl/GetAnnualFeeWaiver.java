@@ -17,8 +17,13 @@ public class GetAnnualFeeWaiver implements IGetAnnualFeeWaiver {
 
 	@Override
 	public AnnualFeeWaiver get(String accountId) {
-		Document receDoc = cq008003.handle(sessionId, accountId);
-		// TODO 进行处理封装
+		try {
+			Document receDoc = cq008003.handle(sessionId, accountId);
+			// TODO 进行处理封装
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return null;
 	}
 	

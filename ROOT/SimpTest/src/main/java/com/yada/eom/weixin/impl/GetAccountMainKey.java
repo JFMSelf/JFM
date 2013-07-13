@@ -20,8 +20,13 @@ public class GetAccountMainKey implements IGetAccountMainKey {
 
 	@Override
 	public List<Accuont> get(String accNo) {
-		Document receDoc = cq008134.handle(sessionId, accNo);
-		// TODO ½âÎödocument
+		try {
+			Document receDoc = cq008134.handle(sessionId, accNo);
+			// TODO ½âÎödocument
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		return null;
 	}
