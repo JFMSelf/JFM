@@ -64,7 +64,7 @@ public abstract class AbstractEomXmlOrder implements IEomHandle{
 			return builder.build(new StringReader(receXmlMsg));
 		} catch (Exception e) {
 			StringBuilder sb = new StringBuilder();
-			sb.append("解析XML出现问题。[");
+			sb.append("瑙ｆ瀽XML鍑虹幇闂銆俒");
 			sb.append(receXmlMsg);
 			sb.append("]");
 			throw new RuntimeException(sb.toString(), e);
