@@ -25,7 +25,7 @@ public class GetBillingSummary implements IGetBillingSummary {
 		
 		try {
 			Document receDoc = cq045005.handle(sessionId, accountId);
-			// TODO 读取receDoc转成对象
+			// TODO 绛夊緟瀹屾垚
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

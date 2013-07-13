@@ -19,7 +19,7 @@ public class GetAnnualFeeWaiver implements IGetAnnualFeeWaiver {
 	public AnnualFeeWaiver get(String accountId) {
 		try {
 			Document receDoc = cq008003.handle(sessionId, accountId);
-			// TODO 进行处理封装
+			// TODO  绛夊緟瀹屾垚
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

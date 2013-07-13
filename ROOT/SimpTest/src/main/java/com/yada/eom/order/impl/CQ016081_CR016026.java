@@ -4,9 +4,9 @@ import com.yada.eom.core.SynchEOMClient;
 import com.yada.eom.order.AbstractEomXmlOrder;
 
 
-public class CQ016067_CR01011 extends AbstractEomXmlOrder {
+public class CQ016081_CR016026 extends AbstractEomXmlOrder {
 
-	public CQ016067_CR01011(SynchEOMClient eomClient) {
+	public CQ016081_CR016026(SynchEOMClient eomClient) {
 		super(eomClient);
 	}
 

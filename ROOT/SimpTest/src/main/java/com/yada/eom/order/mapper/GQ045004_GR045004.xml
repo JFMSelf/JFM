@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Conversation SYSTEM "Conversation.dtd">
+<Conversation SessionID="${dynamicValue}" ApplicationID="ISSUER">
+    <Message MessageID="GQ045004" LUWInd="0" RequestNumber="1">
+        <Entity EntityName="GeDmArgumentBlock">
+            <Field FieldName="systemKey1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+            <Field FieldName="integer1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+        </Entity>
+    </Message>
+</Conversation>

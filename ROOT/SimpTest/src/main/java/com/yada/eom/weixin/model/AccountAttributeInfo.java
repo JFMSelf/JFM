@@ -1,6 +1,6 @@
 package com.yada.eom.weixin.model;
 
-public class Accuont {
+public class AccountAttributeInfo {
 	private String id;
 	private String accountRefNo;
 	private String accountTypeId;

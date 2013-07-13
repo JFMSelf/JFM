@@ -6,7 +6,7 @@ import org.jdom2.Document;
 
 import com.yada.eom.order.IEomHandle;
 import com.yada.eom.weixin.IGetAccountMainKey;
-import com.yada.eom.weixin.model.Accuont;
+import com.yada.eom.weixin.model.AccountAttributeInfo;
 
 public class GetAccountMainKey implements IGetAccountMainKey {
 
@@ -19,10 +19,10 @@ public class GetAccountMainKey implements IGetAccountMainKey {
 	}
 
 	@Override
-	public List<Accuont> get(String accNo) {
+	public List<AccountAttributeInfo> get(String accNo) {
 		try {
 			Document receDoc = cq008134.handle(sessionId, accNo);
-			// TODO ½âÎödocument
+			// TODO ï¿½ï¿½ï¿½ï¿½document
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

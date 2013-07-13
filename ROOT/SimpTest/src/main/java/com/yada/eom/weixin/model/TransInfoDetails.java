@@ -1,5 +1,5 @@
 package com.yada.eom.weixin.model;
 
-public class Bill {
-	
+public class TransInfoDetails {
+
 }
