@@ -25,7 +25,7 @@ public class SynchEOMClient {
 		try {
 			uri = new URI(caIniPath);
 		} catch (URISyntaxException e) {
-			throw new RuntimeException("³õÊ¼»¯SynchEOMClient´íÎó¡£ca.iniÂ·¾¶[" + caIniPath + "]");
+			throw new RuntimeException("åˆå§‹åŒ–SynchEOMClienté”™è¯¯ã€‚ca.iniè·¯å¾„[" + caIniPath + "]");
 		}
 		clientAdapter = new SynchClientAdapter(uri.getPath());
 	}
@@ -34,13 +34,13 @@ public class SynchEOMClient {
 		String eomDoConversation = null;
 		try {
 			eomDoConversation = clientAdapter.eomDoConversation(sendXmlMsg);
-			logger.debug("EOM½»»¥-------->" + System.getProperty("line.separator") + "·¢ËÍÊı¾İ----->"
+			logger.debug("EOMäº¤äº’-------->" + System.getProperty("line.separator") + "å‘é€æ•°æ®----->"
 					+ System.getProperty("line.separator") + sendXmlMsg + System.getProperty("line.separator")
-					+ "ÊÕµ½Êı¾İ----->" + System.getProperty("line.separator") + eomDoConversation);
+					+ "æ”¶åˆ°æ•°æ®----->" + System.getProperty("line.separator") + eomDoConversation);
 			return eomDoConversation;
 		} catch (Exception e) {
 			StringBuilder mess = new StringBuilder();
-			mess.append("EOM½»»¥Ê§°Ü: ·¢ËÍÊı¾İ[").append(sendXmlMsg).append("ÊÕµ½Êı¾İ[");
+			mess.append("EOMäº¤äº’å¤±è´¥: å‘é€æ•°æ®[").append(sendXmlMsg).append("æ”¶åˆ°æ•°æ®[");
 			mess.append(eomDoConversation).append("]");
 			logger.error(mess.toString(), e);
 			throw new Exception(mess.toString(), e);

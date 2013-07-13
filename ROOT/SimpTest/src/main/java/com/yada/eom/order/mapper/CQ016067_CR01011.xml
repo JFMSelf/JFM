@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Conversation SYSTEM "Conversation.dtd" >
+<Conversation SessionID="${dynamicValue}" ApplicationID="ISSUER">
+	<Message MessageID="CQ016067" LUWInd="0" RequestNumber="2">
+		<Entity EntityName="GeDmArgumentBlock">
+			<Field FieldName="code1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code2" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code3" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code4" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code5" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code6" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code7" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code8" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code9" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="code10" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="amount1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="amount2" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="amount3" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="amount4" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="flag1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="flag2" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="text1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="text2" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="key1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="key2" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="date1" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="date2" FieldValue="${dynamicValue}" FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+		</Entity>
+	</Message>
+</Conversation>
