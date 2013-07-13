@@ -1,5 +1,7 @@
 package com.yada.eom.weixin.impl;
 
+import java.util.List;
+
 import org.jdom2.Document;
 
 import com.yada.eom.order.IEomHandle;
@@ -16,7 +18,7 @@ public class GetTransactionDetails implements IGetTransactionDetails {
 	}
 
 	@Override
-	public TransInfoDetails get(String accNo, String CurrencyType, String startDate, String endDate, String IsSelectMC,
+	public List<TransInfoDetails> get(String accNo, String CurrencyType, String startDate, String endDate, String IsSelectMC,
 			String tranType, String startCount, String endCount, String minAmt, String maxAmt) {
 		try {
 			Document receDoc = cq016081.handle(sessionId, accNo, CurrencyType, startDate, endDate, IsSelectMC,

@@ -13,6 +13,6 @@ public class GetAnnualFeeWaiverTest {
 		SynchEOMClient eomClient = new SynchEOMClient(path);
 		CQ008003_CR008004 cq008003 = new CQ008003_CR008004(eomClient);
 		GetAnnualFeeWaiver getAnnualFeeWaiver = new GetAnnualFeeWaiver("1", cq008003);
-		getAnnualFeeWaiver.get("001A03F70055CB7A");
+		getAnnualFeeWaiver.get("001A03F70055D4C8");
 	}
 }
