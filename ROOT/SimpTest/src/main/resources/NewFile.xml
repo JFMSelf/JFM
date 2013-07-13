@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE Conversation SYSTEM "Conversation.dtd" >
-<Conversation SessionID="3268" ApplicationID="ISSUER">
+<Conversation SessionID="1" ApplicationID="ISSUER">
 	<Message MessageID="CQ016067" LUWInd="0" RequestNumber="2">
 		<Entity EntityName="GeDmArgumentBlock">
 			<Field FieldName="code1" FieldValue="YADA" FieldUpdated="TRUE"
@@ -38,10 +38,10 @@
 				FieldNull="FALSE"></Field>
 			<Field FieldName="text2" FieldValue="" FieldUpdated="TRUE"
 				FieldNull="FALSE"></Field>
-			<Field FieldName="key1" FieldValue="6259062306725164"
+			<Field FieldName="key1" FieldValue="6227611144317177"
 				FieldUpdated="TRUE" FieldNull="FALSE"></Field>
-			<Field FieldName="key2" FieldValue="111111" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
+			<Field FieldName="key2" FieldValue="1111111111111111111106116700EBBCE8E8"
+				FieldUpdated="TRUE" FieldNull="FALSE"></Field>
 			<Field FieldName="date1" FieldValue="" FieldUpdated="TRUE"
 				FieldNull="FALSE"></Field>
 			<Field FieldName="date2" FieldValue="" FieldUpdated="TRUE"

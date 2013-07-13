@@ -15,7 +15,7 @@ public class CheckPinTest {
 		SynchEOMClient eomClient = new SynchEOMClient(path);
 		CQ016067_CR01011 cq016067 = new CQ016067_CR01011(eomClient);
 		CheckPin checkPin = new CheckPin("PINI", "YADA", "1", cq016067);
-		byte[] tempPin = CodecUtil.pin2PinBlockWithCardNO("111111", "6259062306725164");
-		checkPin.verify("6259062306725164", new String(tempPin));
+		byte[] tempPin = CodecUtil.pin2PinBlockWithCardNO("111111", "6227611144317177");
+		checkPin.verify("6227611144317177", "11111111111111111111" + CodecUtil.hexEncode(tempPin));
 	}
 }

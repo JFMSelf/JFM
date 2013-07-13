@@ -2,9 +2,11 @@ package com.yada.eom.weixin;
 
 public interface ICheckPin {
 	/**
-	 * ÑéÖ¤ÃÜÂë
-	 * @param accNo ÕËºÅ
-	 * @param pin ÃÜÂë
+	 * ã€Šå¾®ä¿¡æ¸ é“EOMæ¥å£è¯´æ˜ã€‹v1.0ä¸­1.7 å¯†ç éªŒè¯
+	 * 
+	 * @param accNo
+	 *            å¡å·
+	 * @param pin
 	 * @return
 	 */
 	public boolean verify(String accNo, String pin);

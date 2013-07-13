@@ -3,7 +3,7 @@ package com.yada.eom.weixin;
 import com.yada.eom.weixin.model.BillDetails;
 
 /**
- * »ñÈ¡ÕËµ¥Ã÷Ï¸½Ó¿Ú
+ * ã€Šå¾®ä¿¡æ¸ é“EOMæ¥å£è¯´æ˜ã€‹ 1.0ä¸­çš„1.3æŸ¥è¯¢è´¦å•æ˜ç»†
  * 
  * @author jiangfengming
  * 
@@ -11,8 +11,10 @@ import com.yada.eom.weixin.model.BillDetails;
 public interface IGetBillDetails {
 	/**
 	 * 
-	 * @param accountId ¿¨¶ÔÓ¦ÕÊºÅID
-	 * @param billNo ¶ÔÕÊµ¥ĞòºÅ
+	 * @param accountId
+	 *            è´¦æˆ·ä¸»é”®ID
+	 * @param billNo
+	 *            å¯¹è´¦å•åºå·
 	 * @return
 	 */
 	public BillDetails get(String accountId, String billNo);
