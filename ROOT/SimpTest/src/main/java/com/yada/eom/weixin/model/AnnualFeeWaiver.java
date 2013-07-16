@@ -1,10 +1,14 @@
 package com.yada.eom.weixin.model;
 
 public class AnnualFeeWaiver {
+	//年费减免标志
 	private String feeFlag;
+	//年费免除开始时间
 	private String feeStartDate;
+	//年费免除结束时间
 	private String feeEndDate;
-	private String feeDate;
+	//下次年费日期
+	private String nextFeeDate;
 	public String getFeeFlag() {
 		return feeFlag;
 	}
@@ -23,10 +27,10 @@ public class AnnualFeeWaiver {
 	public void setFeeEndDate(String feeEndDate) {
 		this.feeEndDate = feeEndDate;
 	}
-	public String getFeeDate() {
-		return feeDate;
+	public String getNextFeeDate() {
+		return nextFeeDate;
 	}
-	public void setFeeDate(String feeDate) {
-		this.feeDate = feeDate;
+	public void setNextFeeDate(String nextFeeDate) {
+		this.nextFeeDate = nextFeeDate;
 	}
 }
