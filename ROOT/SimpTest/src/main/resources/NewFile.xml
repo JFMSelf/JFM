@@ -1,153 +1,51 @@
-<?xml version="1.0" encoding = "utf-8" standalone = "no"?> 
-<!DOCTYPE Conversation SYSTEM "Conversation.dtd">
-<Conversation SessionID="00000001" ResultCode="+000000000"
-	ApplicationID="ISSUER">
-	<Message RequestNumber="0001" MessageID="GR045004" LUWInd="0">
-		<Entity EntityName="GeDmStatementSummary">
-			<Field FieldName="availableBalance1" FieldValue="51920230"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="availableBalance2" FieldValue="50520230"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="availableBalance3" FieldValue="2000000"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="creditLimit1" FieldValue="2000000"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="creditLimit2" FieldValue="600000"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="creditLimit3" FieldValue="2000000"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="accountNumber" FieldValue="                    "
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="accountTypeId" FieldValue="RG01"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="pendingAccountTypeId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="accountId" FieldValue="001A03F70055D4C8"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="holdStatement" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="noInserts" FieldValue="0" FieldErrorNumber="00000000"
-				FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="pendingEndDate" FieldValue=""
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="pendingStartDate" FieldValue=""
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="associatedMemoFlag" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="autopaymentIndicator" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="companyName" FieldValue="                              "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="companyNumber" FieldValue="                    "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="contactId" FieldValue="001A03F70055D4C2"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="duplicateContactId" FieldValue="                "
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="currencyCode" FieldValue="156"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="closingBalance" FieldValue="-49920230"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="closingMinPayment" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="closingOverlimit" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="closingPastDue" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="closingTotalDue" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="openingBalance" FieldValue="-49880115"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="paymentDueDate" FieldValue=""
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="lastUpdateNo" FieldValue="0"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="productId" FieldValue="PRMC"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="pendingProductId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="sortCode" FieldValue="      "
-				FieldErrorNumber="00000000" FieldNull="TRUE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="statementDate" FieldValue="2015-08-10"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="statementNo" FieldValue="4" FieldErrorNumber="00000000"
-				FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="periodStartDate" FieldValue="2014-11-11"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="periodEndDate" FieldValue="2015-08-10"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="statementTypeCode" FieldValue="REGL"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="automaticStatusMessageId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="creditLimitIncreaseMessageId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="delinquencyMessageId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="firstUsageMessageId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="manualStatusMessageId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="overlimitMessageId" FieldValue="    "
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="statementMessage1Id" FieldValue="SM11"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="statementMessage2Id" FieldValue="SM18"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="statementMessage3Id" FieldValue="SM19"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="totalCredits" FieldValue="40115"
-				FieldErrorNumber="00000000" FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
-			<Field FieldName="totalDebits" FieldValue="0" FieldErrorNumber="00000000"
-				FieldNull="FALSE" FieldIsUpdateable="TRUE">
-			</Field>
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE Conversation SYSTEM "Conversation.dtd" >
+<Conversation SessionID="1" ApplicationID="ISSUER">
+	<Message MessageID="CQ016067" LUWInd="0" RequestNumber="2">
+		<Entity EntityName="GeDmArgumentBlock">
+			<Field FieldName="code1" FieldValue="YADA" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code2" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code3" FieldValue="PINI" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code4" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code5" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code6" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code7" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code8" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code9" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="code10" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="amount1" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="amount2" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="amount3" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="amount4" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="flag1" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="flag2" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="text1" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="text2" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="key1" FieldValue="6227611144317177"
+				FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="key2" FieldValue="06116700EBBCE8E8"
+				FieldUpdated="TRUE" FieldNull="FALSE"></Field>
+			<Field FieldName="date1" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
+			<Field FieldName="date2" FieldValue="" FieldUpdated="TRUE"
+				FieldNull="FALSE"></Field>
 		</Entity>
 	</Message>
 </Conversation>

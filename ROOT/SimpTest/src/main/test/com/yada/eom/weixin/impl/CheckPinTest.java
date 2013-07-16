@@ -16,6 +16,6 @@ public class CheckPinTest {
 		CQ016067_CR010011 cq016067 = new CQ016067_CR010011(eomClient);
 		CheckPin checkPin = new CheckPin("PINI", "YADA", "1", cq016067);
 		byte[] tempPin = CodecUtil.pin2PinBlockWithCardNO("111111", "6227611144317177");
-		checkPin.verify("6227611144317177", "11111111111111111111" + CodecUtil.hexEncode(tempPin));
+		checkPin.verify("6227611144317177", CodecUtil.hexEncode(tempPin));
 	}
 }

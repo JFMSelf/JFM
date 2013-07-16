@@ -1,9 +1,9 @@
 package com.yada.eom.weixin.model;
 
 public class BillingSummary {
-	// ¶ÔÕËµ¥ĞòºÅ
+	// å¯¹è´¦å•åºå·
 	private String number;
-	// ¶ÔÕËµ¥ÈÕÆÚ
+	// å¯¹è´¦å•æ—¥æœŸ
 	private String date;
 
 	public String getNumber() {
