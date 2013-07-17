@@ -1,7 +1,5 @@
 package com.yada.eom.weixin.impl;
 
-import org.jdom2.Document;
-
 import com.yada.eom.exception.EOMFailtureException;
 import com.yada.eom.order.IEomHandle;
 import com.yada.eom.weixin.ICheckPin;
@@ -28,11 +26,10 @@ public class CheckPin implements ICheckPin {
 		parameters[19] = accNo;
 		parameters[20] = pin;
 		try {
-			Document receDoc = cq016067.handle(parameters);
-			return true;
+			cq016067.handle(parameters);
+			// 暂时已经取消掉了该交易
+			throw new RuntimeException("未实现该功能");
 		} catch (EOMFailtureException e) {
-			return false;
-		} catch (Exception e) {
 			return false;
 		}
 	}
