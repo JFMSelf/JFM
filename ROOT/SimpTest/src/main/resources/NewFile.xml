@@ -1,51 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><!DOCTYPE Conversation SYSTEM "Conversation.dtd" >
-<Conversation SessionID="1" ApplicationID="ISSUER">
-	<Message MessageID="CQ016067" LUWInd="0" RequestNumber="2">
+<?xml version="1.0" encoding = "utf-8" standalone = "no"?> 
+<!DOCTYPE Conversation SYSTEM "Conversation.dtd">
+<Conversation SessionID="00000001" ResultCode="+000000000"
+	ApplicationID="ISSUER">
+	<Message RequestNumber="0001" MessageID="CR016026" LUWInd="0">
 		<Entity EntityName="GeDmArgumentBlock">
-			<Field FieldName="code1" FieldValue="YADA" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code2" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code3" FieldValue="PINI" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code4" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code5" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code6" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code7" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code8" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code9" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="code10" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="amount1" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="amount2" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="amount3" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="amount4" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="flag1" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="flag2" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="text1" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="text2" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="key1" FieldValue="6227611144317177"
-				FieldUpdated="TRUE" FieldNull="FALSE"></Field>
-			<Field FieldName="key2" FieldValue="06116700EBBCE8E8"
-				FieldUpdated="TRUE" FieldNull="FALSE"></Field>
-			<Field FieldName="date1" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
-			<Field FieldName="date2" FieldValue="" FieldUpdated="TRUE"
-				FieldNull="FALSE"></Field>
+			<Field FieldName="integer1" FieldValue="0" FieldErrorNumber="00000000"
+				FieldNull="FALSE" FieldIsUpdateable="FALSE">
+			</Field>
+			<Field FieldName="flag1" FieldValue="0" FieldErrorNumber="00000000"
+				FieldNull="FALSE" FieldIsUpdateable="FALSE">
+			</Field>
 		</Entity>
+		<RepeatGroup RepeatGroupID="0001">
+		</RepeatGroup>
 	</Message>
 </Conversation>

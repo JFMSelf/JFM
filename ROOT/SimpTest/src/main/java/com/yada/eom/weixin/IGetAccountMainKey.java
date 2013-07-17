@@ -2,6 +2,7 @@ package com.yada.eom.weixin;
 
 import java.util.List;
 
+import com.yada.eom.exception.EOMFailtureException;
 import com.yada.eom.weixin.model.AccountAttributeInfo;
 
 /**
@@ -12,5 +13,5 @@ import com.yada.eom.weixin.model.AccountAttributeInfo;
  * 
  */
 public interface IGetAccountMainKey {
-	public List<AccountAttributeInfo> get(String accNo);
+	public List<AccountAttributeInfo> get(String accNo) throws EOMFailtureException;
 }
