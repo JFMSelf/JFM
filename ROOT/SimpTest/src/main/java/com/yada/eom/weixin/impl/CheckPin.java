@@ -2,6 +2,7 @@ package com.yada.eom.weixin.impl;
 
 import org.jdom2.Document;
 
+import com.yada.eom.exception.EOMFailtureException;
 import com.yada.eom.order.IEomHandle;
 import com.yada.eom.weixin.ICheckPin;
 
@@ -29,6 +30,8 @@ public class CheckPin implements ICheckPin {
 		try {
 			Document receDoc = cq016067.handle(parameters);
 			return true;
+		} catch (EOMFailtureException e) {
+			return false;
 		} catch (Exception e) {
 			return false;
 		}

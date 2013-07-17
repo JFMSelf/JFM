@@ -11,9 +11,9 @@ import org.jdom2.input.SAXBuilder;
 
 import com.yada.eom.core.IgnoreDTDEntityResolver;
 import com.yada.eom.core.SynchEOMClient;
+import com.yada.eom.exception.EOMFailtureException;
 
-
-public abstract class AbstractEomXmlOrder implements IEomHandle{
+public abstract class AbstractEomXmlOrder implements IEomHandle {
 
 	protected SynchEOMClient eomClient;
 	protected String splitString = "\\$\\{dynamicValue\\}";
@@ -48,7 +48,7 @@ public abstract class AbstractEomXmlOrder implements IEomHandle{
 			sendXmlMsg.append(contents[x]);
 			if (x < parametersLen) {
 				String temp = parameters[x];
-				if(temp == null){
+				if (temp == null) {
 					temp = "";
 				}
 				sendXmlMsg.append(temp);
@@ -71,12 +71,12 @@ public abstract class AbstractEomXmlOrder implements IEomHandle{
 		}
 
 	}
-	
+
 	@Override
-	public Document handle(String... parameters) throws Exception {
+	public Document handle(String... parameters) throws EOMFailtureException {
 		String send = this.packSendXmlMsg(parameters);
 		String rece = this.eomClient.send(send);
 		return this.unpackReceXmlMsg(rece);
 	}
-	
+
 }

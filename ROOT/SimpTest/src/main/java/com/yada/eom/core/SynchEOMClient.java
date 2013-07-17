@@ -6,7 +6,9 @@ import java.net.URISyntaxException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.sema.eom.EOMException;
 import com.sema.eom.SynchClientAdapter;
+import com.yada.eom.exception.EOMFailtureException;
 
 public class SynchEOMClient {
 	private final static Logger logger = LoggerFactory.getLogger(SynchEOMClient.class);
@@ -30,7 +32,7 @@ public class SynchEOMClient {
 		clientAdapter = new SynchClientAdapter(uri.getPath());
 	}
 
-	public String send(String sendXmlMsg) throws Exception {
+	public String send(String sendXmlMsg) throws EOMFailtureException {
 		String eomDoConversation = null;
 		try {
 			eomDoConversation = clientAdapter.eomDoConversation(sendXmlMsg);
@@ -38,12 +40,16 @@ public class SynchEOMClient {
 					+ System.getProperty("line.separator") + sendXmlMsg + System.getProperty("line.separator")
 					+ "收到数据----->" + System.getProperty("line.separator") + eomDoConversation);
 			return eomDoConversation;
-		} catch (Exception e) {
+		} catch (EOMException e) {
 			StringBuilder mess = new StringBuilder();
-			mess.append("EOM交互失败: 发送数据[").append(sendXmlMsg).append("收到数据[");
-			mess.append(eomDoConversation).append("]");
+			mess.append("EOM交互失败: 发送数据----->");
+			mess.append(System.getProperty("line.separator"));
+			mess.append(sendXmlMsg);
+			mess.append("收到数据----->");
+			mess.append(System.getProperty("line.separator"));
+			mess.append(eomDoConversation);
 			logger.error(mess.toString(), e);
-			throw new Exception(mess.toString(), e);
+			throw new EOMFailtureException(e);
 		}
 	}
 }

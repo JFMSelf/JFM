@@ -26,7 +26,6 @@ public class XPathTest {
 	@Test
 	public void testXPath() throws URISyntaxException {
 		String uri = XPathTest.class.getResource("") +"XPathTest.xml" ;
-		System.out.println(uri);
 		Path path = Paths.get(new URI(uri));
 		StringBuilder xml = new StringBuilder();
 		try (BufferedReader reader = Files.newBufferedReader(path, Charset.forName("UTF-8"));){

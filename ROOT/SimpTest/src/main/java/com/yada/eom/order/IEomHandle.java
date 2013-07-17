@@ -2,14 +2,16 @@ package com.yada.eom.order;
 
 import org.jdom2.Document;
 
+import com.yada.eom.exception.EOMFailtureException;
+
 public interface IEomHandle {
 	/**
-	 * 对信息打包发送然后返回dom
+	 * 缁勮XML鍙戦�佸苟鎺ユ敹
 	 * 
 	 * @param parameters
-	 *            参数数量需要大于1，第一个参数必须是sessionId；
-	 * @return JDOM2对象
+	 *            鍙傛暟锛岀涓�涓弬鏁板繀椤讳负sessionId
+	 * @return JDOM2鐨凞ocument
 	 */
-	public Document handle(String... parameters) throws Exception;
+	public Document handle(String... parameters) throws EOMFailtureException;
 
 }
