@@ -22,10 +22,10 @@ public class GetAccountInfo implements IGetAccountInfo {
 	@Override
 	public AccountInfo get(String accNo, String currencyCode) {
 		try {
-			Document handle = cq016061.handle(sessionId, accNo, currencyCode);
-			//TODO 需需要处理
+			Document document = cq016061.handle(sessionId, accNo, currencyCode);
 			SAXBuilder builder=new SAXBuilder();
 			builder.setEntityResolver(new IgnoreDTDEntityResolver());
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

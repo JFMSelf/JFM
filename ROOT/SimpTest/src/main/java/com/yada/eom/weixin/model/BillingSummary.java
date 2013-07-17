@@ -2,24 +2,21 @@ package com.yada.eom.weixin.model;
 
 public class BillingSummary {
 	// 对账单序号
-	private String number;
+	private String statementNo;
 	// 对账单日期
-	private String date;
-
-	public String getNumber() {
-		return number;
+	private String statementDate;
+	
+	public String getStatementNo() {
+		return statementNo;
 	}
-
-	public void setNumber(String number) {
-		this.number = number;
+	public void setStatementNo(String statementNo) {
+		this.statementNo = statementNo;
 	}
-
-	public String getDate() {
-		return date;
+	public String getStatementDate() {
+		return statementDate;
 	}
-
-	public void setDate(String date) {
-		this.date = date;
+	public void setStatementDate(String statementDate) {
+		this.statementDate = statementDate;
 	}
 
 }

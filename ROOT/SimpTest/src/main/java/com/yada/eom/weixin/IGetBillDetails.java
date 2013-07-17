@@ -1,5 +1,6 @@
 package com.yada.eom.weixin;
 
+import com.yada.eom.exception.EOMFailtureException;
 import com.yada.eom.weixin.model.BillDetails;
 
 /**
@@ -11,9 +12,11 @@ import com.yada.eom.weixin.model.BillDetails;
 public interface IGetBillDetails {
 	/**
 	 * 
-	 * @param accountId  账户主键ID
-	 * @param billNo     对账单序号
+	 * @param accountId
+	 *            账户主键ID
+	 * @param billNo
+	 *            对账单序号
 	 * @return
 	 */
-	public BillDetails get(String accountId, String billNo);
+	public BillDetails get(String accountId, String billNo) throws EOMFailtureException;
 }
