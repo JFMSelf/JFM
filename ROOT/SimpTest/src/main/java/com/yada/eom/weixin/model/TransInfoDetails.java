@@ -6,14 +6,14 @@ public class TransInfoDetails {
 	private String postingDate;// 记帐日期
 	private String originalCurrencyCode;// 交易币种
 	private String postingCurrencyCode;// 记帐币种
-	private String originalTxnAmount;
-	private String postingAmount;
+	private String originalTxnAmount;// 交易金额
+	private String postingAmount;// 记帐金额
 	private String txnProfCode;// 借方，贷方
-	private String txnCode;
-	private String txnStatusCode;
-	private String dateTransactionDisputed;
-	private String DateReleasedFromDispute;
-	private String txnDescription;
+	private String txnCode;// 交易代码
+	private String txnStatusCode;// 交易状态代码
+	private String dateTransactionDisputed;// 争议日期
+	private String DateReleasedFromDispute;// 释放日期
+	private String txnDescription;// 交易描述
 
 	public String getPan() {
 		return pan;

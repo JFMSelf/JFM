@@ -10,6 +10,7 @@ import org.jdom2.input.SAXBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.sema.eom.EOMException;
 import com.yada.eom.core.IgnoreDTDEntityResolver;
 
 public class EOMFailtureException extends Exception {
@@ -20,7 +21,7 @@ public class EOMFailtureException extends Exception {
 	private String respCode;
 	private String message;
 
-	public EOMFailtureException(Exception e) {
+	public EOMFailtureException(EOMException e) {
 		message = e.getMessage();
 		SAXBuilder builder = new SAXBuilder();
 		builder.setEntityResolver(new IgnoreDTDEntityResolver());
@@ -39,4 +40,5 @@ public class EOMFailtureException extends Exception {
 		return respCode;
 	}
 
+	
 }
