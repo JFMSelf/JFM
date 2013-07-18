@@ -1,10 +1,11 @@
 package com.yada.eom.weixin.impl;
 
-import java.util.List;
-
 import org.jdom2.Document;
 import org.jdom2.Element;
+import org.jdom2.xpath.XPathExpression;
+import org.jdom2.xpath.XPathFactory;
 
+import com.yada.eom.exception.EOMFailtureException;
 import com.yada.eom.order.IEomHandle;
 import com.yada.eom.weixin.IGetAnnualFeeWaiver;
 import com.yada.eom.weixin.model.AnnualFeeWaiver;
@@ -19,42 +20,31 @@ public class GetAnnualFeeWaiver implements IGetAnnualFeeWaiver {
 	}
 
 	@Override
-	public AnnualFeeWaiver get(String accountId) {
-		try {
-			Document receDoc = cq008003.handle(sessionId, accountId);
-			//得到所有的Field
-			List<Element> FieldList=receDoc.getRootElement().getChildren("Message").get(0).getChildren("Entity").get(0).getChildren("Field");
-			if(FieldList!=null&&FieldList.size()!=0)
-			{
-				AnnualFeeWaiver annualFeeWaiver=new AnnualFeeWaiver();
-				for(int i=0;i<FieldList.size();i++)
-				{
-					Element fieldElement=FieldList.get(i);
-					String fieldName=fieldElement.getAttribute("FieldName").getValue();
-					//取得具体字段
-					if(fieldName.equals("nextMembershipFeeDate"))
-					{
-						annualFeeWaiver.setNextFeeDate(fieldElement.getAttribute("FieldValue").getValue());
-					}else if(fieldName.equals("waiveMembershipFeeEndDate"))
-					{
-						annualFeeWaiver.setFeeEndDate(fieldElement.getAttribute("FieldValue").getValue());
-					}else if(fieldName.equals("waiveMembershipFee"))
-					{
-						annualFeeWaiver.setFeeFlag(fieldElement.getAttribute("FieldValue").getValue());
-					}else if(fieldName.equals("waiveMembershipFeeStartDate"))
-					{
-						annualFeeWaiver.setFeeStartDate(fieldElement.getAttribute("FieldValue").getValue());
-					}
-					
-					
-				}
-				return annualFeeWaiver;
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
+	public AnnualFeeWaiver get(String accountId) throws EOMFailtureException {
+		AnnualFeeWaiver annualFeeWaiver = new AnnualFeeWaiver();
+		Document receDoc = cq008003.handle(sessionId, accountId);
+		// 得到所有的Field
+		XPathFactory xPathFactory = XPathFactory.instance();
+		XPathExpression<Object> expression = null;
+		// 下次年费日期
+		expression = xPathFactory.compile("/Conversation/Message/Entity/Field[@FieldName='nextMembershipFeeDate']");
+		Element nextMembershipFeeDate = (Element) expression.evaluate(receDoc).get(0);
+		annualFeeWaiver.setNextMembershipFeeDate(nextMembershipFeeDate.getAttributeValue("FieldValue"));
+		// 年费免除结束时间
+		expression = xPathFactory.compile("/Conversation/Message/Entity/Field[@FieldName='waiveMembershipFeeEndDate']");
+		Element waiveMembershipFeeEndDate = (Element) expression.evaluate(receDoc).get(0);
+		annualFeeWaiver.setWaiveMembershipFeeEndDate(waiveMembershipFeeEndDate.getAttributeValue("FieldValue"));
+		// 年费免除开始时间
+		expression = xPathFactory.compile("/Conversation/Message/Entity/Field[@FieldName='waiveMembershipFee']");
+		Element waiveMembershipFee = (Element) expression.evaluate(receDoc).get(0);
+		annualFeeWaiver.setWaiveMembershipFee(waiveMembershipFee.getAttributeValue("FieldValue"));
+		// 年费减免标志
+		expression = xPathFactory
+				.compile("/Conversation/Message/Entity/Field[@FieldName='waiveMembershipFeeStartDate']");
+		Element waiveMembershipFeeStartDate = (Element) expression.evaluate(receDoc).get(0);
+		annualFeeWaiver.setWaiveMembershipFeeStartDate(waiveMembershipFeeStartDate.getAttributeValue("FieldValue"));
+
+		return annualFeeWaiver;
 	}
-	
+
 }

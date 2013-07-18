@@ -1,36 +1,59 @@
 package com.yada.eom.weixin.model;
 
 public class AnnualFeeWaiver {
-	//年费减免标志
-	private String feeFlag;
-	//年费免除开始时间
-	private String feeStartDate;
-	//年费免除结束时间
-	private String feeEndDate;
-	//下次年费日期
-	private String nextFeeDate;
-	public String getFeeFlag() {
-		return feeFlag;
+	// 年费减免标志
+	private String waiveMembershipFee;
+	// 年费免除开始时间
+	private String waiveMembershipFeeStartDate;
+	// 年费免除结束时间
+	private String waiveMembershipFeeEndDate;
+	// 下次年费日期
+	private String nextMembershipFeeDate;
+
+	public String getNextMembershipFeeDate() {
+		return nextMembershipFeeDate;
 	}
-	public void setFeeFlag(String feeFlag) {
-		this.feeFlag = feeFlag;
+
+	public void setNextMembershipFeeDate(String nextMembershipFeeDate) {
+		this.nextMembershipFeeDate = nextMembershipFeeDate;
 	}
-	public String getFeeStartDate() {
-		return feeStartDate;
+
+	public String getWaiveMembershipFeeEndDate() {
+		return waiveMembershipFeeEndDate;
 	}
-	public void setFeeStartDate(String feeStartDate) {
-		this.feeStartDate = feeStartDate;
+
+	public void setWaiveMembershipFeeEndDate(String waiveMembershipFeeEndDate) {
+		this.waiveMembershipFeeEndDate = waiveMembershipFeeEndDate;
 	}
-	public String getFeeEndDate() {
-		return feeEndDate;
+
+	public String getWaiveMembershipFee() {
+		return waiveMembershipFee;
 	}
-	public void setFeeEndDate(String feeEndDate) {
-		this.feeEndDate = feeEndDate;
+
+	public void setWaiveMembershipFee(String waiveMembershipFee) {
+		this.waiveMembershipFee = waiveMembershipFee;
 	}
-	public String getNextFeeDate() {
-		return nextFeeDate;
+
+	public String getWaiveMembershipFeeStartDate() {
+		return waiveMembershipFeeStartDate;
 	}
-	public void setNextFeeDate(String nextFeeDate) {
-		this.nextFeeDate = nextFeeDate;
+
+	public void setWaiveMembershipFeeStartDate(String waiveMembershipFeeStartDate) {
+		this.waiveMembershipFeeStartDate = waiveMembershipFeeStartDate;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("AnnualFeeWaiver [waiveMembershipFee=");
+		sb.append(waiveMembershipFee);
+		sb.append(", waiveMembershipFeeStartDate=");
+		sb.append(waiveMembershipFeeStartDate);
+		sb.append(", waiveMembershipFeeEndDate=");
+		sb.append(waiveMembershipFeeEndDate);
+		sb.append(", nextMembershipFeeDate=");
+		sb.append(nextMembershipFeeDate);
+		sb.append("]");
+		return sb.toString();
 	}
 }
