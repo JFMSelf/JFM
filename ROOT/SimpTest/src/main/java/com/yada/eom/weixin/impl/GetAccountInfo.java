@@ -2,11 +2,9 @@ package com.yada.eom.weixin.impl;
 
 import org.jdom2.Document;
 import org.jdom2.input.SAXBuilder;
-import org.junit.internal.builders.IgnoredBuilder;
 
 import com.yada.eom.core.IgnoreDTDEntityResolver;
 import com.yada.eom.order.IEomHandle;
-import com.yada.eom.order.ReceXmlField;
 import com.yada.eom.weixin.IGetAccountInfo;
 import com.yada.eom.weixin.model.AccountInfo;
 
