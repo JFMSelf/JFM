@@ -6,14 +6,14 @@ public class TransInfoDetails {
 	private String postingDate;// 记帐日期
 	private String originalCurrencyCode;// 交易币种
 	private String postingCurrencyCode;// 记帐币种
-	private String originalTxnAmount;// 交易金额
+	private String originalTransactionAmount;// 交易金额
 	private String postingAmount;// 记帐金额
-	private String txnProfCode;// 借方，贷方
-	private String txnCode;// 交易代码
-	private String txnStatusCode;// 交易状态代码
-	private String dateTransactionDisputed;// 争议日期
-	private String DateReleasedFromDispute;// 释放日期
-	private String txnDescription;// 交易描述
+	private String debitCreditCode;// 借方，贷方
+	private String transactionProfileCode;// 交易代码
+	private String transactionStatusCode;// 交易状态代码
+	private String dateTxnDisputed;// 争议日期
+	private String dateReleasedFromDispute;// 释放日期
+	private String transactionDescription;// 交易描述
 
 	public String getPan() {
 		return pan;
@@ -55,12 +55,12 @@ public class TransInfoDetails {
 		this.postingCurrencyCode = postingCurrencyCode;
 	}
 
-	public String getOriginalTxnAmount() {
-		return originalTxnAmount;
+	public String getOriginalTransactionAmount() {
+		return originalTransactionAmount;
 	}
 
-	public void setOriginalTxnAmount(String originalTxnAmount) {
-		this.originalTxnAmount = originalTxnAmount;
+	public void setOriginalTransactionAmount(String originalTransactionAmount) {
+		this.originalTransactionAmount = originalTransactionAmount;
 	}
 
 	public String getPostingAmount() {
@@ -71,52 +71,63 @@ public class TransInfoDetails {
 		this.postingAmount = postingAmount;
 	}
 
-	public String getTxnProfCode() {
-		return txnProfCode;
+	public String getDebitCreditCode() {
+		return debitCreditCode;
 	}
 
-	public void setTxnProfCode(String txnProfCode) {
-		this.txnProfCode = txnProfCode;
+	public void setDebitCreditCode(String debitCreditCode) {
+		this.debitCreditCode = debitCreditCode;
 	}
 
-	public String getTxnCode() {
-		return txnCode;
+	public String getTransactionProfileCode() {
+		return transactionProfileCode;
 	}
 
-	public void setTxnCode(String txnCode) {
-		this.txnCode = txnCode;
+	public void setTransactionProfileCode(String transactionProfileCode) {
+		this.transactionProfileCode = transactionProfileCode;
 	}
 
-	public String getTxnStatusCode() {
-		return txnStatusCode;
+	public String getTransactionStatusCode() {
+		return transactionStatusCode;
 	}
 
-	public void setTxnStatusCode(String txnStatusCode) {
-		this.txnStatusCode = txnStatusCode;
+	public void setTransactionStatusCode(String transactionStatusCode) {
+		this.transactionStatusCode = transactionStatusCode;
 	}
 
-	public String getDateTransactionDisputed() {
-		return dateTransactionDisputed;
+	public String getDateTxnDisputed() {
+		return dateTxnDisputed;
 	}
 
-	public void setDateTransactionDisputed(String dateTransactionDisputed) {
-		this.dateTransactionDisputed = dateTransactionDisputed;
+	public void setDateTxnDisputed(String dateTxnDisputed) {
+		this.dateTxnDisputed = dateTxnDisputed;
 	}
 
 	public String getDateReleasedFromDispute() {
-		return DateReleasedFromDispute;
+		return dateReleasedFromDispute;
 	}
 
 	public void setDateReleasedFromDispute(String dateReleasedFromDispute) {
-		DateReleasedFromDispute = dateReleasedFromDispute;
+		this.dateReleasedFromDispute = dateReleasedFromDispute;
 	}
 
-	public String getTxnDescription() {
-		return txnDescription;
+	public String getTransactionDescription() {
+		return transactionDescription;
 	}
 
-	public void setTxnDescription(String txnDescription) {
-		this.txnDescription = txnDescription;
+	public void setTransactionDescription(String transactionDescription) {
+		this.transactionDescription = transactionDescription;
+	}
+
+	@Override
+	public String toString() {
+		return "TransInfoDetails [pan=" + pan + ", transactionDate=" + transactionDate + ", postingDate=" + postingDate
+				+ ", originalCurrencyCode=" + originalCurrencyCode + ", postingCurrencyCode=" + postingCurrencyCode
+				+ ", originalTransactionAmount=" + originalTransactionAmount + ", postingAmount=" + postingAmount
+				+ ", debitCreditCode=" + debitCreditCode + ", transactionProfileCode=" + transactionProfileCode
+				+ ", transactionStatusCode=" + transactionStatusCode + ", dateTxnDisputed=" + dateTxnDisputed
+				+ ", dateReleasedFromDispute=" + dateReleasedFromDispute + ", transactionDescription="
+				+ transactionDescription + "]";
 	}
 
 }

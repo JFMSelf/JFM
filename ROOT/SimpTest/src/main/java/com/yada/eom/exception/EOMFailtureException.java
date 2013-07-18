@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import com.sema.eom.EOMException;
 import com.yada.eom.core.IgnoreDTDEntityResolver;
+import com.yada.eom.core.RespCodeMessage;
 
 public class EOMFailtureException extends Exception {
 	private static final Logger logger = LoggerFactory.getLogger(EOMFailtureException.class);
@@ -40,5 +41,10 @@ public class EOMFailtureException extends Exception {
 		return respCode;
 	}
 
-	
+	public String getErrorMessage() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("respCode[").append(respCode).append("]mappedMessage[");
+		sb.append(RespCodeMessage.getRespCodeMessage(respCode)).append("]");
+		return sb.toString();
+	}
 }
